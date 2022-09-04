@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  @font-face {
+    font-family: 'Gilroy-Medium';
+    src: local('Gilroy-Medium'), url('/font/Gilroy-Medium.woff') format('woff');
+  }
+
+
+
+  body {
+    @apply bg-gray-600 dark:bg-black text-gray-700 dark:text-gray-600 tracking-wider select-none
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl
+  }
+
+  sub {
+    @apply text-gray-700 text-[10px] md:text-xs
+  }
+
+  li {
+    @apply list-inside text-xs md:text-sm
+  }
+
+  a {
+    @apply text-blue-600 underline text-xs md:text-sm
+  }
+
+  p {
+    @apply text-xs md:text-sm
+  }
+
+  b {
+    @apply font-bold text-xs md:text-sm
+  }
+
+  main {
+    @apply p-4 mx-auto max-w-screen-md
+  }
+
+  menu {
+    @apply flex m-0 p-0 justify-evenly items-center
+  }
+
+  span {
+    @apply flex flex-col m-0 p-0 justify-start items-start
+  }
+
+}
