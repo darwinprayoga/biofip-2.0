@@ -1,4 +1,4 @@
-import { getCookie } from "cookies-next";
+import { getCookie } from 'cookies-next';
 
 export type OS =
   | "undetermined"
@@ -51,7 +51,5 @@ export const mobile = () => {
     return false;
   }
 };
-
-export const pointer = "cursor-auto md:cursor-pointer";
 
 export const darkTheme = getCookie("theme") == "dark" ? true : false;

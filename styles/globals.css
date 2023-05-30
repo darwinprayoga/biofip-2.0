@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+
+  .pointer {
+    @apply cursor-auto md:cursor-pointer
+  }
+
+  .input {
+    @apply tracking-wider bg-gray-trans p-2 rounded-lg w-full placeholder-gray-700/50 dark:placeholder-gray-700
+  }
+
+  .btnPlain {
+    @apply flex py-3 px-6 justify-center items-center font-bold tracking-widest rounded-xl text-blue-600 border-transparent border-2 active:translate-y-0.5 active:scale-[0.99]
+  }
+
+  .btnBorder {
+    @apply flex py-3 px-6 justify-center items-center font-bold tracking-widest rounded-xl text-blue-600 border-blue-600 border-2 active:translate-y-0.5 active:scale-[0.99]
+  }
+
+  .btnFilled {
+    @apply flex py-3 px-6 justify-center items-center font-bold tracking-widest rounded-xl bg-blue-600 hover:bg-blue-700 text-white border-blue-600 border-2 shadow-md hover:shadow-blue-700/10 active:translate-y-0.5 active:scale-[0.99]
+  }
+
+  .mobile {
+    @apply fixed inset-0 flex flex-col md:hidden overflow-y-auto
+  }
+
+  .desktop {
+    @apply hidden md:grid fixed inset-0 grid-cols-8
+  }
+
+  .navbar {
+    @apply bg-gray-600/50 dark:bg-black/80 backdrop-blur-md fixed bottom-0 left-0 right-0 h-16 rounded-t-3xl grid grid-cols-3
+  }
+  
+  .leftbar {
+    @apply col-span-1 w-full h-full
+  }
+
+  .midbar {
+    @apply col-span-5 w-full h-full overflow-y-auto
+  }
+
+  .rightbar {
+    @apply col-span-2 w-full h-full p-4
+  }
+
+}
+
 @layer base {
 
   @font-face {
@@ -12,23 +60,23 @@
 
 
   body {
-    @apply bg-gray-600 dark:bg-black text-gray-700 dark:text-gray-600 tracking-wider select-none
+    @apply bg-gray-600 dark:bg-black text-gray-700 dark:text-gray-600 tracking-wide select-none scroll-smooth
   }
 
   h1 {
-    @apply text-3xl md:text-4xl
+    @apply text-3xl md:text-4xl text-gray-800 dark:text-white
   }
 
   h2 {
-    @apply text-2xl md:text-3xl
+    @apply text-2xl md:text-3xl text-gray-800 dark:text-white
   }
 
   h3 {
-    @apply text-xl md:text-2xl
+    @apply text-xl md:text-2xl text-gray-800 dark:text-white
   }
 
   sub {
-    @apply text-gray-700 text-[10px] md:text-xs
+    @apply dark:text-gray-700 text-[10px] md:text-xs
   }
 
   li {
@@ -36,19 +84,23 @@
   }
 
   a {
-    @apply text-blue-600 underline text-xs md:text-sm
+    @apply pointer text-blue-600 underline text-xs md:text-sm
   }
 
   p {
     @apply text-xs md:text-sm
   }
 
+  i {
+    @apply text-xs md:text-sm
+  }
+
   b {
-    @apply font-bold text-xs md:text-sm
+    @apply font-bold text-xs md:text-sm tracking-wider
   }
 
   main {
-    @apply p-4 mx-auto max-w-screen-md
+    @apply mx-auto max-w-screen-md
   }
 
   menu {
@@ -57,6 +109,18 @@
 
   span {
     @apply flex flex-col m-0 p-0 justify-start items-start
+  }
+
+  button {
+    @apply pointer focus:outline-none
+  }
+
+  input {
+    @apply focus:outline-none
+  }
+
+  ::-webkit-scrollbar {
+    @apply hidden
   }
 
 }

@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 const now = new Date().toISOString()
 
@@ -24,22 +24,25 @@ class MyDocument extends Document {
     render() {
         return (
             <Html lang='en'>
+                <noscript>
+                    //THIS SITE by @darwinprayoga
+                </noscript>
                 <Head>
 
                     {/* <!-- SEO --> */}
                     <meta name="author" content="Muhammad Darwin Prayoga" />
                     <meta name='description'
-                        content='It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward.' />
+                        content='User link 3.0: the next generation of self-branding by using links based on Web 3.0' />
                     <meta name="keywords"
-                        content="Owls Bio, nft, NFT, Biography, Self branding, Web 3.0, Identity card, Metaverse, Trading card, Biofip, biofip, Biography Fit Page, Design trend, UI, UX, Wallet QR, Ethereum, Multiple APIs, Linktree, Pillar.io, LinkFire, lnk.to, Smart links"
+                        content="Biofip, Biography Fit Page, Owls Bio, NFT, Self branding, Web 3.0, Identity card, Metaverse, Trading card, biofip, Design trend, UI, UX, Wallet QR, Ethereum, Multiple APIs, Linktree, Pillar.io, LinkFire, lnk.to, Smart links"
                         itemProp="keywords" />
 
                     {/* <!-- Google+ / Schema.org --> */}
                     <meta itemProp="name" content="Biography Fit Page" />
                     <meta itemProp="headline" content="Biography Fit Page" />
                     <meta itemProp="description"
-                        content="It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward." />
-                    <meta itemProp="image" content="/icon-384x384.png" />
+                        content="User link 3.0: the next generation of self-branding by using links based on Web 3.0" />
+                    <meta itemProp="image" content="/preview.png" />
                     <meta itemProp="datePublished" content={now} />
                     <meta itemProp="dateModified" content={now} />
                     <meta itemProp="author" content="Muhammad Darwin Prayoga" />
@@ -66,18 +69,18 @@ class MyDocument extends Document {
                     <meta name='twitter:url' content='https://biofip.com' />
                     <meta name='twitter:title' content='Biofip - Official Site' />
                     <meta name='twitter:description'
-                        content='It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward.' />
-                    <meta name='twitter:image' content='/icon-384x384.png' />
+                        content='User link 3.0: the next generation of self-branding by using links based on Web 3.0' />
+                    <meta name='twitter:image' content='/preview.png' />
                     <meta name='twitter:creator' content='@mdarwinp' />
                     <meta property='og:type' content='profile' />
                     <meta property='og:title' content='Biofip - Official Site' />
                     <meta property='og:description'
-                        content='It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward.' />
+                        content='User link 3.0: the next generation of self-branding by using links based on Web 3.0' />
                     <meta property='og:site_name' content='Biofip' />
                     <meta property='og:url' content='https://biofip.com' />
-                    <meta property='og:image' content='/icon-384x384.png' />
-                    <meta property='og:image:url' content='/icon-384x384.png' />
-                    <meta property="og:image:secure_url" content='/icon-384x384.png' />
+                    <meta property='og:image' content='/preview.png' />
+                    <meta property='og:image:url' content='/preview.png' />
+                    <meta property="og:image:secure_url" content='/preview.png' />
 
                 </Head>
                 <body>

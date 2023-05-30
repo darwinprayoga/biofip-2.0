@@ -1,8 +1,8 @@
-export default function Input(props: { className?: string, type?: string, name?: string, placeholder?: string }) {
+export default function Input(props: { className?: string, type?: string, name?: string, placeholder?: string, onChange: any, autoFocus?: boolean }) {
 
-    const initial = 'focus:outline-none tracking-wider bg-gray-trans p-2 rounded-lg w-full placeholder-gray-smoke dark:placeholder-gray-700'
+    const initial = 'input'
 
     return (
-        <input className={`${initial} ${props.className}`} type={props.type} name={props.name} placeholder={props.placeholder} />
+        <input autoFocus={props.autoFocus} onChange={props.onChange} className={`${initial} ${props.className}`} type={props.type} name={props.name} placeholder={props.placeholder} />
     )
 }

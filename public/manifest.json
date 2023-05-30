@@ -5,7 +5,7 @@
     "scope": "/",
     "start_url": "/",
     "name": "Biofip",
-    "short_name": "biofip",
+    "short_name": "Biofip",
     "description": "It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward.",
     "categories": [
         "social",
@@ -49,17 +49,17 @@
     ],
     "screenshots": [
         {
-            "src": "#",
+            "src": "/ss1.png",
             "sizes": "586x1041",
             "type": "image/png"
         },
         {
-            "src": "#",
+            "src": "/ss2.png",
             "sizes": "586x1041",
             "type": "image/png"
         },
         {
-            "src": "#",
+            "src": "/ss3.png",
             "sizes": "586x1041",
             "type": "image/png"
         }
